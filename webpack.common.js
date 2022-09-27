@@ -14,7 +14,7 @@ module.exports = {
                 presets: ['@babel/preset-env','@babel/preset-react'],
               }
           },
-          { // 2
+          {
             test: /\.html$/,
             use: [
               {
@@ -25,6 +25,10 @@ module.exports = {
               },
             ],
           },
+          {
+            test: /\.css$/,
+            use: ["style-loader","css-loader"]
+          }
         ],
     },
     plugins: [

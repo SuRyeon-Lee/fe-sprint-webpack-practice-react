@@ -1,4 +1,4 @@
-// git push -u origin main로 config 파일 나누기
+// npm install --save-dev webpack-merge로 config 파일 나누기
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path = require('path');
